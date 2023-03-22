@@ -31,9 +31,9 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
-          application_name:
-          environment_name:
-          existing_bucket_name:
-          region:
+          application_name: multi-docker-fib
+          environment_name: Multidockerfib-env
+          existing_bucket_name: elasticbeanstalk-us-east-2-885955662136
+          region: us-east-2
           version_label: ${{ github.sha }}
           deployment_package: deploy.zip
